@@ -117,10 +117,10 @@ body{
     background-color: #5b5b5b;
 }
 .solcls{
-    background-image: url(assests/solution.svg);
+    background-image: url(assets/solution.svg);
 }
 .pptcls{
-    background-image: url(assests/precipitate.svg);
+    background-image: url(assets/precipitate.svg);
 }
 #check{
     border: rgb(64, 171, 224) 2px solid;
