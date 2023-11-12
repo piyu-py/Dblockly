@@ -1,0 +1,151 @@
+@keyframes stretchAnimation {
+    0% {
+      width: 100px;
+      height:33px;
+      border-radius: 0%;
+      color: rgb(140 239 255);;
+      border: rgb(64, 171, 224) 2px solid;
+      background-color: rgb(68, 110, 129);
+    }
+    100% {
+      width:50px;
+      height: 50px;
+      border-radius: 100%;
+      color: rgb(30, 161, 30);
+      border: rgb(30, 161, 30) 2px solid;
+      background-color: rgb(26, 97, 26);
+      font-size: xx-large;
+
+    }
+  }
+  @keyframes backanimation {
+    0% {width:50px;
+        height: 50px;
+        border-radius: 100%;
+        color: rgb(30, 161, 30);
+        border: rgb(30, 161, 30) 2px solid;
+        background-color: rgb(26, 97, 26);
+        font-size: small;
+      
+    }
+    100% {
+        width: 100px;
+        height:33px;
+        border-radius: 0%;
+        color: rgb(140 239 255);
+        border: rgb(64, 171, 224) 2px solid;
+        background-color: rgb(68, 110, 129);
+
+    }
+  }
+svg{
+    height: 70vh;
+}
+#main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:60px
+}
+#problem{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.color{
+    aspect-ratio: 1;
+    width: 50px;
+    margin:0%;
+    border: none;
+}
+#bloodred{
+    background-color: rgb(166, 0, 0);
+}
+#green{
+    background-color: rgb(12, 101, 12);
+}
+#brown{
+    background-color: rgb(85, 43, 43);
+}
+#yellow{
+    background-color: rgb(255, 255, 2);
+}
+#blue{
+    background-color: rgb(0, 0, 255);
+}
+#orange{
+    background-color: rgb(255, 165, 0);
+}
+#lightgreen{
+    background-color: rgb(26, 255, 26);
+}
+#lightblue{
+    background-color: rgb(0, 174, 255);
+}
+#purple{
+    background-color: rgb(138, 43, 226);
+}
+#pink{
+    background-color: rgb(255, 0, 230);
+}
+#white{
+    background-color: rgb(255, 255, 255);
+}
+#lightpink{
+    background-color: rgb(255, 192, 203);
+}
+#ion{
+    font-size: 5em;
+}
+h1{
+    margin:0%;
+}
+#precipitatebtn{
+    width: 120px;
+    aspect-ratio: 1;
+    
+    border: none;
+}
+body{
+    background-color: #5b5b5b;
+}
+.solcls{
+    background-image: url(assests/solution.svg);
+}
+.pptcls{
+    background-image: url(assests/precipitate.svg);
+}
+#check{
+    border: rgb(64, 171, 224) 2px solid;
+    background-color: rgb(68, 110, 129);
+    color: rgb(140 239 255);;
+    width: 100px;
+    aspect-ratio: 3;
+    font-weight: bolder;
+}
+.animatedcheck {
+    animation: stretchAnimation 1.5s forwards; /* Apply animation */
+  }
+.animatedcheckbackwards{
+    animation: backanimation 1.5s forwards;
+}
+  #reagent{
+    font-size: 20px;
+  }
+  #credits{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    color: #0affcf;
+  }
+  #email{
+    text-decoration: none;
+    color: #85ff00;
+  }

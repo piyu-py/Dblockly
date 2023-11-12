@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="precipitate.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#755441;fill-opacity:1;fill-rule:evenodd;stroke:#ff7f2a;stroke-width:1.98721;stroke-linejoin:round;stroke-dasharray:none"
+       id="rect1"
+       width="118.00507"
+       height="118.00507"
+       x="0.99746752"
+       y="0.99746746" />
+    <g
+       id="g1"
+       transform="translate(0.15444015,-10.810811)">
+      <path
+         id="rect2"
+         style="fill:#ffb400;fill-opacity:1;fill-rule:evenodd;stroke:#81ffff;stroke-width:1.99831;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 59.688085,28.136344 c -5.945262,0 -10.731542,4.794629 -10.731542,10.750262 v 48.00117 c 0,5.955633 4.78628,10.750262 10.731542,10.750262 5.945262,0 10.731542,-4.794629 10.731542,-10.750262 v -48.00117 c 0,-5.955633 -4.78628,-10.750262 -10.731542,-10.750262 z m -6.633122,23.797455 c 0.01862,-10e-4 0.03999,-9.16e-4 0.06045,0 0.09825,0.0044 0.196015,0.01137 0.294416,0.0098 0.42304,-0.0071 0.435603,0.407454 0.03899,0.439464 0.02874,0.0014 0.05679,0.0023 0.09164,0.0098 0.0644,0.01384 0.08831,0.09763 0.132584,0.146489 0.06937,0.172966 0.08987,0.35981 0.115037,0.542981 0.05957,0.433425 -0.37765,0.494032 -0.436749,0.06055 -7.01e-4,-0.0051 -0.0012,-0.01049 -0.002,-0.01563 -0.116915,-0.02612 -0.223199,-0.120035 -0.206677,-0.294929 0.01845,-0.195336 0.03613,-0.418857 0.243722,-0.447276 -0.09723,3.66e-4 -0.195517,-0.0054 -0.292466,-0.0098 -0.415867,-0.01858 -0.417545,-0.420696 -0.03899,-0.441417 z" />
+      <path
+         id="rect3"
+         style="fill:#f7ffff;fill-opacity:1;fill-rule:evenodd;stroke:#81ffff;stroke-width:2.05747;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 48.958292,28.240707 v 24.867187 h 4.230469 c -0.09141,-0.04117 -0.162165,-0.13034 -0.148438,-0.275391 0.01833,-0.193721 0.03519,-0.415865 0.238282,-0.447265 -0.09546,1.09e-4 -0.191963,-0.0055 -0.28711,-0.0098 -0.416582,-0.01858 -0.418263,-0.420686 -0.03906,-0.441406 0.01865,-0.001 0.04006,-9.16e-4 0.06055,0 0.09842,0.0044 0.196352,0.01137 0.294922,0.0098 0.428573,-0.0071 0.436601,0.417912 0.02539,0.441406 0.03255,1.66e-4 0.06461,-9.54e-4 0.105469,0.0078 0.06451,0.01384 0.08846,0.09763 0.132812,0.146485 0.06949,0.172962 0.09002,0.359801 0.115235,0.542968 0.0012,0.0088 0.0011,0.01691 0.002,0.02539 H 70.335245 V 28.240707 Z" />
+      <rect
+         style="fill:#40dfff;fill-opacity:1;fill-rule:evenodd;stroke:#81ffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0"
+         id="rect85"
+         width="19.47897"
+         height="32.524544"
+         x="49.876171"
+         y="46.969997"
+         ry="0" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:14.6667px;line-height:0;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffb400;fill-opacity:1;fill-rule:evenodd;stroke:#ff7f2a;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none"
+       x="22.084944"
+       y="106.87259"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         x="22.084944"
+         y="106.87259">Precipitate</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dblockly</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="main">
+    <div id="testtubeholder">
+    <svg
+    width="34.447018mm"
+    height="153.9446mm"
+    viewBox="0 0 34.447018 153.9446"
+    version="1.1"
+    id="svg1"
+    inkscape:export-filename="testtube.svg"
+    inkscape:export-xdpi="96"
+    inkscape:export-ydpi="96"
+    inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+    sodipodi:docname="tube.svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg">
+    <sodipodi:namedview
+        id="namedview1"
+        pagecolor="#505050"
+        bordercolor="#eeeeee"
+        borderopacity="1"
+        inkscape:showpageshadow="0"
+        inkscape:pageopacity="0"
+        inkscape:pagecheckerboard="0"
+        inkscape:deskcolor="#505050"
+        inkscape:document-units="mm"
+        inkscape:zoom="5.5375421"
+        inkscape:cx="110.51835"
+        inkscape:cy="552.68203"
+        inkscape:window-width="1920"
+        inkscape:window-height="991"
+        inkscape:window-x="-9"
+        inkscape:window-y="-9"
+        inkscape:window-maximized="1"
+        inkscape:current-layer="layer1" />
+    <defs
+        id="defs1" />
+    <g
+        inkscape:label="Layer 1"
+        inkscape:groupmode="layer"
+        id="layer1"
+        transform="translate(-42.573064,-63.070658)">
+        <rect
+        style="display:inline;fill:#b2bdff;fill-rule:evenodd;stroke:#00ffff;stroke-width:2.09554;stroke-linejoin:round"
+        id="ppt"
+        width="32.351471"
+        height="145.63766"
+        x="43.620834"
+        y="70.329811"
+        rx="15.414523"
+        ry="19.494802"
+        inkscape:label="ppt" />
+        <rect
+        style="display:inline;fill:#f9f9f9;fill-rule:evenodd;stroke:#00ffff;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none"
+        id="uppertube"
+        width="32.299229"
+        height="65.076241"
+        x="43.670849"
+        y="64.120659"
+        rx="0"
+        ry="0"
+        inkscape:label="uppertube" />
+        <rect
+        style="display:inline;fill:#b2bdff;fill-rule:evenodd;stroke:#00ffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none"
+        id="solution"
+        width="30.296692"
+        height="70.708221"
+        x="44.64003"
+        y="109.28009"
+        rx="0"
+        ry="0"
+        inkscape:label="solution" />
+        <path
+        id="overlay"
+        style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#00ffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none"
+        d="m 45.677832,65.362935 c -0.635281,0 -1.1467,1.917692 -1.1467,4.299996 v 8.409306 c 0,1.384936 0.175395,2.599344 0.444934,3.384806 -0.309699,1.550557 -0.491443,3.167602 -0.491443,4.844666 V 195.02634 c 0,10.77863 6.797281,19.45618 15.240414,19.45618 8.443132,0 15.240413,-8.67755 15.240413,-19.45618 V 86.301709 c 0,-1.81055 -0.207212,-3.553864 -0.566374,-5.214669 0.203125,-0.775095 0.328662,-1.837183 0.328662,-3.014803 v -8.409306 c 0,-2.382304 -0.511418,-4.299996 -1.1467,-4.299996 z"
+        inkscape:label="overlay" />
+    </g>
+    </svg>
+    </div>
+    <div id="problem">
+        <h1 id="ion"></h1>
+        <div id="colors">
+            <button class='color' id="brown" onclick="changecolor('rgb(85, 43, 43)')"></button>
+            <button class='color' id="bloodred" onclick="changecolor('rgb(109, 2, 2)')"></button>
+            <button class='color' id="orange" onclick="changecolor('rgb(255, 165, 0)')"></button>
+            <button class='color' id="yellow" onclick="changecolor('rgb(255, 255, 2)')"></button>
+            <button class='color' id="green" onclick="changecolor('rgb(12, 101, 12)')"></button>
+            <button class='color' id="lightgreen" onclick="changecolor('rgb(26, 255, 26)')"></button>
+            <button class='color' id="lightblue" onclick="changecolor('rgb(0, 174, 255)')"></button>
+            <button class='color' id="blue" onclick="changecolor('rgb(0, 0, 255)')"></button>
+            <button class='color' id="purple" onclick="changecolor('rgb(138, 43, 226)')"></button>
+            <button class='color' id="pink" onclick="changecolor('rgb(255, 0, 230)')"></button>
+            <button class='color' id="lightpink" onclick="changecolor('rgb(255, 192, 203)')"></button>
+            <button class='color' id="white" onclick="changecolor('rgb(255,255,255)')"></button>
+        </div>
+        <div id="state">
+            <button id="precipitatebtn" class="solcls" onclick="changestate()"></button>
+        </div>
+        <div id="checker">
+            <button id="check" onclick="check()">Check</button>
+        </div>
+        
+        </div>
+</div><center>
+    <div id="credits">©️ desinged and developed by <a id="email" href = "mailto: piyushandev@gmail.com">Piyushan Nanayakkara</a></center></div>
+      <script>
+        var issolution=1
+        var solutioncolor
+        let solutiondisplay=document.querySelector('#solution')
+        let pptdisplay =document.querySelector('#ppt')
+        let checkbtn=document.querySelector('#check')
+        let compounddisplay=document.querySelector('#ion')
+        let green='rgb(12, 101, 12)'
+        let blue='rgb(0, 0, 255)'
+        let yellow='rgb(255, 255, 2)'
+        var compounds=[
+            ['Cu','2+','with conc. HCl',1,'rgb(255, 255, 2)'],
+            ['Cu','2+','(aq)',1,blue],
+            ['Cu','2+','with NaOH',0,'rgb(0, 174, 255)'],
+            ['Cu','2+','excess NH<sub>3</sub>',1,blue],
+            ['Ni','2+','(aq)',1,green],
+            ['Ni','2+','NaOH',0,green],
+            ['Ni','2+','with excess NH<sub>3</sub>',1,blue],
+            ['Ni','2+','with conc. HCl',1,yellow],
+    ]
+        function randomelement(arr){
+            return Math.floor(Math.random() * arr.length)
+        }
+        var compound=compounds[randomelement(compounds)]
+        function setcompound(){
+            compound=compounds[randomelement(compounds)]
+            compounddisplay.innerHTML=`${compound[0]}<sup id="charge">${compound[1]}</sup> <span id="reagent">${compound[2]}</span>`
+        }
+        setcompound()
+        function changecolor(color){
+            solutioncolor=color
+            pptdisplay.style.fill=color
+            showstate()
+        }
+        function changestate(){
+            let states=['pptcls','solcls']
+            issolution=issolution != 1 ? 1 : 0;
+            document.querySelector('#precipitatebtn').className=states[issolution]
+            showstate()
+        }
+        function showstate(){
+            if (issolution){
+                solutiondisplay.style.fill=ppt.style.fill
+            }else{
+                solutiondisplay.style.fill='#b2bdff'
+            }
+        }
+        function check(){
+        console.log('clicked')
+            if(solutioncolor===compound[4] && issolution===compound[3]){
+            var audio = new Audio('assests/ding.mp3');
+            audio.play();
+            checkbtn.disabled=true
+            checkbtn.innerHTML='☑'
+            checkbtn.className='animatedcheck'
+            }
+        }
+        checkbtn.addEventListener('animationend',()=>{
+            if(checkbtn.innerHTML!=='Check'){
+            console.log('ended')
+            checkbtn.disabled=false
+            checkbtn.className='animatedcheckbackwards'
+            setcompound()
+            checkbtn.innerHTML='Check'
+            }
+        })
+        
+      </script>
+</body>
+</html>
