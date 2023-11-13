@@ -102,7 +102,7 @@
             <button class='color' id="purple" onclick="changecolor('rgb(138, 43, 226)')"></button>
             <button class='color' id="pink" onclick="changecolor('rgb(255, 0, 230)')"></button>
             <button class='color' id="lightpink" onclick="changecolor('rgb(255, 192, 203)')"></button>
-            <button class='color' id="white" onclick="changecolor('rgb(255,255,255)')"></button>
+            <button class='color' id="white" onclick="changecolor('rgb(255, 255, 255)')"></button>
         </div>
         <div id="state">
             <button id="precipitatebtn" class="solcls" onclick="changestate()"></button>
@@ -121,18 +121,40 @@
         let pptdisplay =document.querySelector('#ppt')
         let checkbtn=document.querySelector('#check')
         let compounddisplay=document.querySelector('#ion')
+        let nh3='excess NH<sub>3</sub>'
+        let naoh='with NaOH'
+        let aq='(aq)'
+        let hcl='with conc. HCl'
         let green='rgb(12, 101, 12)'
         let blue='rgb(0, 0, 255)'
         let yellow='rgb(255, 255, 2)'
+        let lightblue = 'rgb(0, 174, 255)'
+        let pink = 'rgb(255, 0, 230)'
+        let purple ='rgb(138, 43, 226)'
+        let lightgreen='rgb(26, 255, 26)'
+        let brown='rgb(85, 43, 43)'
+        let lightpink='rgb(255, 192, 203)'
+        let white='rgb(255, 255, 255)'
         var compounds=[
-            ['Cu','2+','with conc. HCl',1,'rgb(255, 255, 2)'],
-            ['Cu','2+','(aq)',1,blue],
-            ['Cu','2+','with NaOH',0,'rgb(0, 174, 255)'],
-            ['Cu','2+','excess NH<sub>3</sub>',1,blue],
-            ['Ni','2+','(aq)',1,green],
-            ['Ni','2+','NaOH',0,green],
-            ['Ni','2+','with excess NH<sub>3</sub>',1,blue],
-            ['Ni','2+','with conc. HCl',1,yellow],
+            ['Cu','2+',nh3,1,blue],
+            ['Cu','2+',aq,1,blue],
+            ['Cu','2+',naoh,0,lightblue],
+            ['Cu','2+',hcl,1,yellow],
+            ['Ni','2+',aq,1,green],
+            ['Ni','2+',naoh,0,green],
+            ['Ni','2+',nh3,1,blue],
+            ['Ni','2+',hcl,1,yellow],
+            ['Co','2+',aq,1,pink],
+            ['Co','2+',naoh,0,pink],
+            ['Co','2+',nh3,1,yellow],
+            ['Co','2+',hcl,1,blue],
+            ['Cr','3+',aq,1,purple],
+            ['Fe','2+',aq,1,lightgreen],
+            ['Fe','2+',naoh,0,green],
+            ['Fe','3+',naoh,0,brown],
+            ['Fe','3+',hcl,1,yellow],
+            ['Mn','2+',aq,1,lightpink],
+            ['Mn','2+',naoh,0,white],
     ]
         function randomelement(arr){
             return Math.floor(Math.random() * arr.length)
