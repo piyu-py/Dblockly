@@ -91,6 +91,7 @@
     <div id="problem">
         <h1 id="ion"></h1>
         <div id="colors">
+            <!-- I know what you are doing -->
             <button class='color' id="brown" onclick="changecolor('rgb(85, 43, 43)')"></button>
             <button class='color' id="bloodred" onclick="changecolor('rgb(109, 2, 2)')"></button>
             <button class='color' id="orange" onclick="changecolor('rgb(255, 165, 0)')"></button>
@@ -133,13 +134,13 @@
         let purple ='rgb(138, 43, 226)'
         let lightgreen='rgb(26, 255, 26)'
         let brown='rgb(85, 43, 43)'
-        let lightpink='rgb(255, 192, 203)'
+        let lightpink='rgb(255, 138, 232)'
         let white='rgb(255, 255, 255)'
         var compounds=[
             ['Cu','2+',nh3,1,blue],
-            ['Cu','2+',aq,1,blue],
+            ['Cu','2+',aq,1,lightblue],
             ['Cu','2+',naoh,0,lightblue],
-            ['Cu','2+',hcl,1,yellow],
+            ['Cu','2+',hcl,1,yellow],//I know what you are doing
             ['Ni','2+',aq,1,green],
             ['Ni','2+',naoh,0,green],
             ['Ni','2+',nh3,1,blue],
@@ -165,7 +166,7 @@
         }
         setcompound()
         function changecolor(color){
-            solutioncolor=color
+            solutioncolor=color//Its Ok I too experiments with source code :)
             pptdisplay.style.fill=color
             showstate()
         }
@@ -189,7 +190,7 @@
             audio.play();
             checkbtn.disabled=true
             checkbtn.innerHTML='☑'
-            checkbtn.className='animatedcheck'
+            checkbtn.className='animatedcheck'//good luck
             }
         }
         checkbtn.addEventListener('animationend',()=>{
