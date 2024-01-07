@@ -54,15 +54,18 @@ svg{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-left: 5vw;
 }
 #colors{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    align-content: flex-start;
 }
 .color{
     aspect-ratio: 1;
     width:5vw;
+    min-width: 45px;
     margin:0%;
     border: none;
 }
@@ -102,11 +105,10 @@ svg{
 #lightpink{
     background-color: rgb(255, 138, 232);
 }
-#ion{
-    font-size: 5em;
-}
+
 h1{
     margin:0%;
+    font-size: 3rem;
 }
 #precipitatebtn{
     width:10vw;
@@ -116,7 +118,8 @@ h1{
     border: none;
 }
 body{
-    background-color: #5b5b5b;
+    background-color: #414141;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 .solcls{
     background-image: url(assets/solution.svg);
@@ -126,10 +129,12 @@ body{
 }
 #check{
     border: rgb(64, 171, 224) 2px solid;
-    background-color: rgb(68, 110, 129);
-    color: rgb(140 239 255);;
-    width:9vw;
-    height: 3vw;
+    background-color: rgb(40, 106, 136);
+    color: rgb(140 239 255);
+    padding-left: 10px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+    padding-top: 3px;
     aspect-ratio: 3;
     font-weight: bolder;
     font-size: large;

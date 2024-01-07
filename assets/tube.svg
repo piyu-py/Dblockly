@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
-     inkscape:zoom="5.5375421"
-     inkscape:cx="110.51835"
-     inkscape:cy="552.68203"
+     inkscape:zoom="0.97890839"
+     inkscape:cx="8.6831414"
+     inkscape:cy="456.12031"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="-9"
@@ -52,7 +52,7 @@
        ry="19.494802"
        inkscape:label="ppt" />
     <rect
-       style="display:inline;fill:#f9f9f9;fill-rule:evenodd;stroke:#00ffff;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none"
+       style="display:inline;fill:#b9f9ff;fill-rule:evenodd;stroke:#00ffff;stroke-width:2.1;stroke-linejoin:round;stroke-dasharray:none;fill-opacity:1"
        id="rect3"
        width="32.299229"
        height="65.076241"
@@ -62,7 +62,7 @@
        ry="0"
        inkscape:label="uppertube" />
     <rect
-       style="display:inline;fill:#00ff00;fill-rule:evenodd;stroke:#00ffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none"
+       style="display:inline;fill:#00ff00;fill-rule:evenodd;stroke:#00ffff;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none;fill-opacity:1"
        id="rect15"
        width="30.296692"
        height="70.708221"

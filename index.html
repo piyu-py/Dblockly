@@ -115,6 +115,13 @@
         </div>
 </div><center>
     <div id="credits">©️ desinged and developed by <a id="email" href = "mailto: piyushandev@gmail.com">Piyushan Nanayakkara</a></center></div>
+    <div style="position:fixed;right: 10px;top:10px">
+        <img src="assets/fire.svg" alt="" style="height: 50px;position: relative;" >
+        <p id="sb" style="position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -75%);font-size: larger;font-weight: bolder;color: rgb(255, 0, 0);">0</p>
+    </div>
       <script>
         var issolution=1
         var solutioncolor
@@ -122,6 +129,8 @@
         let pptdisplay =document.querySelector('#ppt')
         let checkbtn=document.querySelector('#check')
         let compounddisplay=document.querySelector('#ion')
+        let score=0
+        let scoreboard=document.querySelector('#sb')
         let nh3='excess NH<sub>3</sub>'
         let naoh='with NaOH'
         let aq='(aq)'
@@ -155,7 +164,8 @@
             ['Fe','3+',hcl,1,yellow],
             ['Mn','2+',aq,1,lightpink],
             ['Mn','2+',naoh,0,white],
-    ]
+    ]   
+        
         function randomelement(arr){
             return Math.floor(Math.random() * arr.length)
         }
@@ -190,8 +200,12 @@
             audio.play();
             checkbtn.disabled=true
             checkbtn.innerHTML='☑'
-            checkbtn.className='animatedcheck'//good luck
+            checkbtn.className='animatedcheck'
+            score=score+1
             }
+            else{
+                score=0
+            }scoreboard.innerHTML=score
         }
         checkbtn.addEventListener('animationend',()=>{
             if(checkbtn.innerHTML!=='Check'){
