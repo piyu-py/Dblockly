@@ -46,7 +46,7 @@ svg{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin:60px
+    height:97vh;
 }
 #problem{
     height: 80vh;
@@ -59,7 +59,7 @@ svg{
 #colors{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-content: flex-start;
 }
 .color{
