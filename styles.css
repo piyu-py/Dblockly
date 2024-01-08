@@ -111,9 +111,10 @@ h1{
 }
 #precipitatebtn{
     width:10vw;
-    background-size: 10vw;
+    /* background-size: 10vw; */
     aspect-ratio: 1;
-    
+    min-width: 60px;
+    background-size: cover;
     border: none;
 }
 body{
@@ -125,6 +126,7 @@ body{
 }
 .pptcls{
     background-image: url(assets/precipitate.svg);
+    
 }
 #check{
     border: rgb(64, 171, 224) 2px solid;
@@ -136,7 +138,7 @@ body{
     padding-top: 3px;
     aspect-ratio: 3;
     font-weight: bolder;
-    font-size: large;
+    font-size: 100%;
 }
 .animatedcheck {
     animation: stretchAnimation 1.5s forwards; /* Apply animation */
