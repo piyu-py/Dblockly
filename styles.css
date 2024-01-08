@@ -146,6 +146,7 @@ body{
 }
   #reagent{
     font-size: 20px;
+    display: inline-block;
   }
   #credits{
     width: 100vw;
