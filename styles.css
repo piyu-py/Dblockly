@@ -107,6 +107,7 @@ svg{
 h1{
     margin:0%;
     font-size: 3rem;
+    display: block;
 }
 #precipitatebtn{
     width:10vw;
@@ -159,3 +160,55 @@ body{
     text-decoration: none;
     color: #85ff00;
   }
+  #heading{
+    display: flex;
+    align-items: center;
+  }
+  #info{
+    font-size:xx-large;
+    color: rgb(0, 174, 255);
+    background: none;
+    border: none;
+  }
+ 
+    #popup{
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, 0%);
+        z-index: 2;
+        border: white solid 2px;
+    }
+    #popupimg{
+        width: 35vw;
+    }
+    #popupbtn{
+        position: absolute;
+        right:0%;
+        aspect-ratio: 1;
+        color: rgb(24, 184, 209);
+        background: none;
+        border: none;
+        border-left: white 2px solid;
+        border-bottom: white 2px solid;
+    }
+    @media screen and (max-width: 900px) {
+        
+    #popupimg{
+            width: 55vw;
+            aspect-ratio: 1.2;
+        }
+    }
+    @media screen and (max-width: 530px) {
+        h1 {
+          width: 150px;
+        }
+        #popup{
+            width: 75vw;
+            aspect-ratio: 1.2;
+        }#popupimg{
+            width: 75vw;
+            aspect-ratio: 1.2;
+        }
+    }

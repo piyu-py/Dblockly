@@ -89,7 +89,14 @@
     </svg>
     </div>
     <div id="problem">
-        <h1 id="ion"></h1>
+        <div id="heading"><h1 id="ion"></h1>
+        <button id="info" onclick="changevisibilitypopup()">ⓘ</button>
+        <div id="popup">
+            <img src="assets/howtoplay.png" alt="" id="popupimg">
+            <button id="popupbtn" onclick="changevisibilitypopup()">X</button>
+        </div>
+        </div>
+        
         <div id="colors">
             <!-- I know what you are doing -->
             <button class='color' id="brown" onclick="changecolor('rgb(85, 43, 43)')"></button>
@@ -114,7 +121,7 @@
         
         </div>
 </div><center>
-    <div id="credits">©️ desinged and developed by <a id="email" href = "mailto: piyushandev@gmail.com">Piyushan Nanayakkara</a></center></div>
+    <div id="credits">Made with 💻 by <a id="email" href = "https://www.instagram.com/d_piyu.sh/">Piyushan Nanayakkara</a></center></div>
     <div style="position:fixed;right: 10px;top:10px">
         <img src="assets/fire.svg" alt="" style="height: 50px;position: relative;" >
         <p id="sb" style="position: absolute;
@@ -129,6 +136,7 @@
         let pptdisplay =document.querySelector('#ppt')
         let checkbtn=document.querySelector('#check')
         let compounddisplay=document.querySelector('#ion')
+        let popup=document.querySelector('#popup')
         let score=0
         let scoreboard=document.querySelector('#sb')
         let nh3='excess NH<sub>3</sub>'
@@ -216,6 +224,13 @@
             checkbtn.innerHTML='Check'
             }
         })
+        function changevisibilitypopup(){
+            if (popup.style.display === "none") {
+                popup.style.display = "block";
+            } else {
+                popup.style.display = "none";
+        }
+        }
         
       </script>
 </body>
