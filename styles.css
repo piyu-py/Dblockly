@@ -211,3 +211,17 @@ body{
             aspect-ratio: 1.2;
         }
     }
+#scorediv{
+    position:fixed;
+    right: 10px;
+    top:10px;
+}
+#sb{
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -75%);font-size: larger;font-weight: bolder;color: rgb(255, 0, 0);
+}
+#fire{
+    height: 50px;position: relative;
+}

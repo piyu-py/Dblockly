@@ -95,7 +95,7 @@
             <img src="assets/howtoplay.png" alt="" id="popupimg">
             <button id="popupbtn" onclick="changevisibilitypopup()">X</button>
         </div>
-        </div>
+        </div> 
         
         <div id="colors">
             <!-- I know what you are doing -->
@@ -122,12 +122,9 @@
         </div>
 </div><center>
     <div id="credits">Made with 💻 by <a id="email" href = "https://www.instagram.com/d_piyu.sh/">Piyushan Nanayakkara</a></center></div>
-    <div style="position:fixed;right: 10px;top:10px">
-        <img src="assets/fire.svg" alt="" style="height: 50px;position: relative;" >
-        <p id="sb" style="position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -75%);font-size: larger;font-weight: bolder;color: rgb(255, 0, 0);">0</p>
+    <div id="scorediv">
+        <img src="assets/fire.svg" id="fire" >
+        <p id="sb">0</p>
     </div>
       <script>
         var issolution=1
@@ -137,41 +134,27 @@
         let checkbtn=document.querySelector('#check')
         let compounddisplay=document.querySelector('#ion')
         let popup=document.querySelector('#popup')
-        let score=0
+        let congratulationsheckerareuhappynow=0
         let scoreboard=document.querySelector('#sb')
-        let nh3='excess NH<sub>3</sub>'
-        let naoh='with NaOH'
-        let aq='(aq)'
-        let hcl='with conc. HCl'
-        let green='rgb(12, 101, 12)'
-        let blue='rgb(0, 0, 255)'
-        let yellow='rgb(255, 255, 2)'
-        let lightblue = 'rgb(0, 174, 255)'
-        let pink = 'rgb(255, 0, 230)'
-        let purple ='rgb(138, 43, 226)'
-        let lightgreen='rgb(26, 255, 26)'
-        let brown='rgb(85, 43, 43)'
-        let lightpink='rgb(255, 138, 232)'
-        let white='rgb(255, 255, 255)'
         var compounds=[
-            ['Cu','2+',nh3,1,blue],
-            ['Cu','2+',aq,1,lightblue],
-            ['Cu','2+',naoh,0,lightblue],
-            ['Cu','2+',hcl,1,yellow],//I know what you are doing
-            ['Ni','2+',aq,1,green],
-            ['Ni','2+',naoh,0,green],
-            ['Ni','2+',nh3,1,blue],
-            ['Ni','2+',hcl,1,yellow],
-            ['Co','2+',aq,1,pink],
-            ['Co','2+',nh3,1,yellow],
-            ['Co','2+',hcl,1,blue],
-            ['Cr','3+',aq,1,purple],
-            ['Fe','2+',aq,1,lightgreen],
-            ['Fe','2+',naoh,0,green],
-            ['Fe','3+',naoh,0,brown],
-            ['Fe','3+',hcl,1,yellow],
-            ['Mn','2+',aq,1,lightpink],
-            ['Mn','2+',naoh,0,white],
+            ['Cu','2+','excess NH<sub>3</sub>',1,'rgb(0, 0, 255)'],
+            ['Cu','2+','(aq)',1,'rgb(0, 174, 255)'],
+            ['Cu','2+','with NaOH',0,'rgb(0, 174, 255)'],
+            ['Cu','2+','with conc. HCl',1,'rgb(255, 255, 2)'],//I know what you are doing
+            ['Ni','2+','(aq)',1,'rgb(12, 101, 12)'],
+            ['Ni','2+','with NaOH',0,'rgb(12, 101, 12)'],
+            ['Ni','2+','excess NH<sub>3</sub>',1,'rgb(0, 0, 255)'],
+            ['Ni','2+','with conc. HCl',1,'rgb(255, 255, 2)'],
+            ['Co','2+','(aq)',1,'rgb(255, 0, 230)'],
+            ['Co','2+','excess NH<sub>3</sub>',1,'rgb(255, 255, 2)'],
+            ['Co','2+','with conc. HCl',1,'rgb(0, 0, 255)'],
+            ['Cr','3+','(aq)',1,'rgb(138, 43, 226)'],
+            ['Fe','2+','(aq)',1,'rgb(26, 255, 26)'],
+            ['Fe','2+','with NaOH',0,'rgb(12, 101, 12)'],
+            ['Fe','3+','with NaOH',0,'rgb(85, 43, 43)'],
+            ['Fe','3+','with conc. HCl',1,'rgb(255, 255, 2)'],
+            ['Mn','2+','(aq)',1,'rgb(255, 138, 232)'],
+            ['Mn','2+','with NaOH',0,white],
     ]   
         
         function randomelement(arr){
@@ -202,22 +185,20 @@
             }
         }
         function check(){
-        console.log('clicked')
             if(solutioncolor===compound[4] && issolution===compound[3]){
             var audio = new Audio('assets/ding.mp3');
             audio.play();
             checkbtn.disabled=true
             checkbtn.innerHTML='☑'
             checkbtn.className='animatedcheck'
-            score=score+1
+            congratulationsheckerareuhappynow=congratulationsheckerareuhappynow+1
             }
             else{
-                score=0
-            }scoreboard.innerHTML=score
+                congratulationsheckerareuhappynow=0
+            }scoreboard.innerHTML=congratulationsheckerareuhappynow
         }
         checkbtn.addEventListener('animationend',()=>{
             if(checkbtn.innerHTML!=='Check'){
-            console.log('ended')
             checkbtn.disabled=false
             checkbtn.className='animatedcheckbackwards'
             setcompound()
