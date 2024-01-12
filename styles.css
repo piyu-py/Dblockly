@@ -201,7 +201,7 @@ body{
     }
     @media screen and (max-width: 530px) {
         h1 {
-          width: 150px;
+          font-size: 2rem;
         }
         #popup{
             width: 75vw;
