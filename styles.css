@@ -245,5 +245,5 @@ body{
     height: 50px;position: relative;
 }
 .unchecked{
-    animation: tweaking 3s infinite;
+    animation: tweaking 2s infinite;
 }
