@@ -97,4 +97,6 @@ var issolution=1
                 popup.style.display = "none";
         }
         }
-        
+document.addEventListener("DOMContentLoaded", function(event) {
+    alert("Please click on the question mark icon to learn how to play!")
+});
