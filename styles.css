@@ -37,6 +37,17 @@
         background-color: rgb(68, 110, 129);
     }
   }
+  @keyframes tweaking {
+    0%{
+        background-color: rgba(255, 255, 255, 0);
+    }
+    50%{
+        background-color: rgba(255, 255, 255, 0.7)
+    }
+    100%{
+        background-color: rgba(255, 255, 255, 0);
+    }
+  }
 svg{
     height: 70vh;
 }
@@ -68,13 +79,13 @@ svg{
     border: none;
 }
 #bloodred{
-    background-color: rgb(166, 0, 0);
+    background-color: rgb(231, 13, 13);
 }
 #green{
     background-color: rgb(12, 101, 12);
 }
 #brown{
-    background-color: rgb(85, 43, 43);
+    background-color: rgb(80, 49, 22);
 }
 #yellow{
     background-color: rgb(255, 255, 2);
@@ -165,13 +176,15 @@ body{
     align-items: center;
   }
   #info{
-    font-size:xx-large;
+    font-size:x-large;
     color: rgb(0, 174, 255);
-    background: none;
+    background:none;
     border: none;
     position: absolute;
     top: 80px;
     right: 10px;
+    border-radius: 100%;
+    aspect-ratio: 1;
   }
  
     #popup{
@@ -230,4 +243,7 @@ body{
 }
 #fire{
     height: 50px;position: relative;
+}
+.unchecked{
+    animation: tweaking 3s infinite;
 }

@@ -7,6 +7,7 @@ var issolution=1
         let popup=document.querySelector('#popup')
         let congratulationsheckerareuhappynow=0
         let scoreboard=document.querySelector('#sb')
+        let infobtn=document.querySelector('#info')
         var compounds=[
             ['Cu','2+','excess NH<sub>3</sub>',1,'rgb(0, 0, 255)'],
             ['Cu','2+','(aq)',1,'rgb(0, 174, 255)'],
@@ -16,11 +17,11 @@ var issolution=1
             ['Ni','2+','with NaOH',0,'rgb(26, 255, 26)'],
             ['Ni','2+','excess NH<sub>3</sub>',1,'rgb(0, 0, 255)'],
             ['Ni','2+','with conc. HCl',1,'rgb(255, 255, 2)'],
-            ['Ni','2+','with D.M.G',1,'rgb(109, 2, 2)'],
+            ['Ni','2+','with D.M.G',1,'rgb(231, 13, 13)'],
             ['Co','2+','(aq)',1,'rgb(255, 0, 230)'],
             ['Co','2+','with NaOH',0,'rgb(255, 0, 230)'],
             ['Co','2+','excess NH<sub>3</sub>',1,'rgb(255, 255, 2)'],
-            ['Co','2+','NH<sub>3</sub> and H<sub>2</sub>O<sub>2</sub>',1,'rgb(85, 43, 43)'],
+            ['Co','2+','NH<sub>3</sub> and H<sub>2</sub>O<sub>2</sub>',1,'rgb(80, 49, 22)'],
             ['Co','2+','with conc. HCl',1,'rgb(0, 0, 255)'],
             ['Cr','3+','(aq)',1,'rgb(138, 43, 226)'],
             ['Cr','3+','excess NaOH',1,'rgb(12, 101, 12)'],
@@ -30,11 +31,11 @@ var issolution=1
             ['Fe','2+','ferricyanide',0,'rgb(0, 0, 255)'],
             ['Fe','2+','ferrocyanide',0,'rgb(255, 255, 255)'],
             ['Fe','3+','(aq)',1,'rgb(255, 255, 2)'],
-            ['Fe','3+','with NaOH',0,'rgb(85, 43, 43)'],
-            ['Fe','3+','with NH<sub>3</sub>',0,'rgb(85, 43, 43)'],
-            ['Fe','3+','ferricyanide',1,'rgb(85, 43, 43)'],
+            ['Fe','3+','with NaOH',0,'rgb(80, 49, 22)'],
+            ['Fe','3+','with NH<sub>3</sub>',0,'rgb(80, 49, 22)'],
+            ['Fe','3+','ferricyanide',1,'rgb(80, 49, 22)'],
             ['Fe','3+','ferrocyanide',0,'rgb(0, 0, 255)'],
-            ['Fe','3+','with NH<sub>4</sub>SCN',1,'rgb(109, 2, 2)'],
+            ['Fe','3+','with NH<sub>4</sub>SCN',1,'rgb(231, 13, 13)'],
             ['Fe','3+','with conc. HCl',1,'rgb(255, 255, 2)'],
             ['Mn','2+','(aq)',1,'rgb(255, 138, 232)'],
             ['Mn','2+','with NaOH',0,'rgb(255, 255, 255)'],
@@ -75,6 +76,7 @@ var issolution=1
             checkbtn.innerHTML='☑'
             checkbtn.className='animatedcheck'
             congratulationsheckerareuhappynow=congratulationsheckerareuhappynow+1
+            infobtn.setAttribute("class", "")
             }
             else{
                 congratulationsheckerareuhappynow=0
