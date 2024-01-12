@@ -165,10 +165,13 @@ body{
     align-items: center;
   }
   #info{
-    font-size:x-small;
+    font-size:xx-large;
     color: rgb(0, 174, 255);
     background: none;
     border: none;
+    position: absolute;
+    top: 80px;
+    right: 10px;
   }
  
     #popup{
