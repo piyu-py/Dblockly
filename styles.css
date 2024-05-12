@@ -37,6 +37,43 @@
         background-color: rgb(68, 110, 129);
     }
   }
+  @keyframes stretchAnimationwrong {
+    0% {
+        padding-left: 20px;
+        padding-right: 20px;
+      border-radius: 0%;
+      color: rgb(140 239 255);;
+      border: rgb(64, 171, 224) 2px solid;
+      background-color: rgb(68, 110, 129);
+    }
+    100% {
+        aspect-ratio: 1;
+      border-radius: 100%;
+      color: rgb(255, 102, 0);
+      border: rgb(255, 102, 0) 2px solid;
+      background-color: rgb(90, 2, 2);
+      font-size: 150%;
+
+    }
+  }
+  @keyframes backanimationwrong {
+    0% {
+        aspect-ratio: 1;
+        border-radius: 100%;
+        color: rgb(255, 39, 39);
+      border: rgb(255, 39, 39) 2px solid;
+      background-color: rgb(201, 22, 57);
+        font-size: 2%;
+      
+    }
+    100% {
+        
+        border-radius: 0%;
+        color: rgb(140 239 255);
+        border: rgb(64, 171, 224) 2px solid;
+        background-color: rgb(68, 110, 129);
+    }
+  }
   @keyframes tweaking {
     0%{
         background-color: rgba(255, 255, 255, 0);
@@ -156,6 +193,12 @@ body{
   }
 .animatedcheckbackwards{
     animation: backanimation 1.5s forwards;
+}
+.animatedcross {
+    animation: stretchAnimationwrong 1.5s forwards; /* Apply animation */
+  }
+.animatedcrossbackwards{
+    animation: backanimationwrong 1.5s forwards;
 }
   #reagent{
     font-size: 20px;

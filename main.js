@@ -70,7 +70,7 @@ var issolution=1
         }
         function check(){
             if(solutioncolor===compound[4] && issolution===compound[3]){
-            var audio = new Audio('assets/ding.mp3');
+            var audio = new Audio('assets/correct.mp3');
             audio.play();
             checkbtn.disabled=true
             checkbtn.innerHTML='☑'
@@ -80,15 +80,27 @@ var issolution=1
             }
             else{
                 congratulationsheckerareuhappynow=0
-            }scoreboard.innerHTML=congratulationsheckerareuhappynow
+                var audio = new Audio('assets/wrong.mp3');
+            audio.play();
+            checkbtn.disabled=true
+            checkbtn.innerHTML='☒'
+            checkbtn.className='animatedcross'
+            infobtn.setAttribute("class", "")
+            }
+            scoreboard.innerHTML=congratulationsheckerareuhappynow
         }
         checkbtn.addEventListener('animationend',()=>{
-            if(checkbtn.innerHTML!=='Check'){
+            if(checkbtn.innerHTML=='☑'){
             checkbtn.disabled=false
             checkbtn.className='animatedcheckbackwards'
             setcompound()
             checkbtn.innerHTML='Check'
             }
+            if(checkbtn.innerHTML=='☒'){
+                checkbtn.disabled=false
+                checkbtn.className='animatedcrossbackwards'
+                checkbtn.innerHTML='Check'
+                }
         })
         function changevisibilitypopup(){
             if (popup.style.display === "none") {
