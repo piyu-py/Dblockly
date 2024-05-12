@@ -8,6 +8,8 @@ var issolution=1
         let congratulationsheckerareuhappynow=0
         let scoreboard=document.querySelector('#sb')
         let infobtn=document.querySelector('#info')
+        let plusmark=document.querySelector('#scored')
+        let skullmark =document.querySelector("#wronged")
         var compounds=[
             ['Cu','2+','excess NH<sub>3</sub>',1,'rgb(0, 0, 255)'],
             ['Cu','2+','(aq)',1,'rgb(0, 174, 255)'],
@@ -77,6 +79,7 @@ var issolution=1
             checkbtn.className='animatedcheck'
             congratulationsheckerareuhappynow=congratulationsheckerareuhappynow+1
             infobtn.setAttribute("class", "")
+            plusmark.style.color='Gold'
             }
             else{
                 congratulationsheckerareuhappynow=0
@@ -86,6 +89,7 @@ var issolution=1
             checkbtn.innerHTML='☒'
             checkbtn.className='animatedcross'
             infobtn.setAttribute("class", "")
+            skullmark.style.color='White'
             }
             scoreboard.innerHTML=congratulationsheckerareuhappynow
         }
@@ -95,11 +99,13 @@ var issolution=1
             checkbtn.className='animatedcheckbackwards'
             setcompound()
             checkbtn.innerHTML='Check'
+            plusmark.style.color='#310031'
             }
             if(checkbtn.innerHTML=='☒'){
                 checkbtn.disabled=false
                 checkbtn.className='animatedcrossbackwards'
                 checkbtn.innerHTML='Check'
+                skullmark.style.color="#310031"
                 }
         })
         function changevisibilitypopup(){
