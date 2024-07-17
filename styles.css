@@ -167,7 +167,8 @@ h1{
 }
 body{
     background-color: #310031;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
 }
 .solcls{
     background-image: url(assets/solution.svg);
