@@ -19,7 +19,7 @@ var issolution=1
             ['Ni','2+','with NaOH',0,'rgb(26, 255, 26)'],
             ['Ni','2+','excess NH<sub>3</sub>',1,'rgb(0, 0, 255)'],
             ['Ni','2+','with conc. HCl',1,'rgb(255, 255, 2)'],
-            ['Ni','2+','with D.M.G',1,'rgb(231, 13, 13)'],
+            ['Ni','2+','with D.M.G',0,'rgb(231, 13, 13)'],
             ['Co','2+','(aq)',1,'rgb(255, 0, 230)'],
             ['Co','2+','with NaOH',0,'rgb(255, 0, 230)'],
             ['Co','2+','excess NH<sub>3</sub>',1,'rgb(255, 255, 2)'],
